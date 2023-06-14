@@ -12,14 +12,15 @@ body{
 .container{
   background-color: #ffffff05;
   backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(4px);
   width: 280px;
   height: 360px;
   display: grid;
   align-items: center;
   justify-items: center;
   border-radius: 30px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.336);
+  box-shadow:  6px 6px 12px #16161648,
+             -6px -6px 12px #ffffff25;
 }
 
 .titolo{
@@ -47,14 +48,51 @@ img{
   padding: 0 25px;
   cursor: pointer;
 }
-.si{ height: 50px;}
-.no{ height: 55px;}
+.si{
+  display: flex;
+  height: 70px;
+  width: 70px;
+  border-radius: 14px;
+  box-shadow:  6px 6px 12px #161616a6,
+             -6px -6px 12px #ffffff4b;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  }
+.no{ 
+  height: 70px;
+  width: 70px;
+  border-radius: 14px;
+  box-shadow:  6px 6px 12px #161616a6,
+             -6px -6px 12px #ffffff4b;
+  cursor: pointer;
+
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg{
+  fill: rgba(255, 255, 255, 0.815);
+}
+
+span{
+  width: 40px;
+}
 
 .si.active{
-  animation: gonfia 0.2s ease-out;
+  animation: gonfia 0.3s ease-out;
 }
 .no.active{
-  animation: gonfia 0.2s ease-out;
+  animation: gonfia 0.3s ease-out;
+}
+
+.x{
+  position: relative;
+  scale: 0.69;
+  top: 10%;
 }
 
 .sfondo{
@@ -71,15 +109,30 @@ img{
 
 @keyframes gonfia {
   0%{
-    scale: 1;
+    box-shadow:  6px 6px 12px #161616a6,
+               -6px -6px 12px #ffffff4b;
+  }
+  10%{
+    box-shadow: none;
   }
   
-  50%{
-    scale: 1.15;
+  20%{
+    box-shadow:  inset 6px 6px 12px #161616a6,
+    inset -6px -6px 12px #ffffff4b;
+  }
+
+  80%{
+    box-shadow:  inset 6px 6px 12px #161616a6,
+    inset -6px -6px 12px #ffffff4b;
+  }
+
+  90%{
+    box-shadow: none;
   }
 
   100%{
-    scale: 1;
+    box-shadow:  6px 6px 12px #161616a6,
+               -6px -6px 12px #ffffff4b;
   }
 }
 
