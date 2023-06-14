@@ -7,13 +7,11 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(Gradient-swirl-in-red-and-blue-iPhone-wallpaper.png) no-repeat center;
-  background-size: cover;
 }
 
 .container{
   background-color: #ffffff05;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(25px);
   width: 280px;
   height: 360px;
@@ -21,7 +19,7 @@ body{
   align-items: center;
   justify-items: center;
   border-radius: 30px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.137)
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.336);
 }
 
 .titolo{
@@ -59,6 +57,17 @@ img{
   animation: gonfia 0.2s ease-out;
 }
 
+.sfondo{
+  position: absolute;
+  z-index: -5;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-image: url(pexels-eberhard-grossgasteiger-12366058.jpg);
+
+}
 
 @keyframes gonfia {
   0%{
