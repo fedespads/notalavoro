@@ -29,6 +29,8 @@ body{
   font-family: 'Galano';
   overflow: hidden;
   color: white;
+  filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.336));
+  user-select: none;
 }
 .uno{
   display: flex;
