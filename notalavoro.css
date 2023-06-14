@@ -90,9 +90,8 @@ span{
 }
 
 .x{
-  position: relative;
-  scale: 0.69;
-  top: 10%;
+  height: 63px;
+  transform: translateY(6px);
 }
 
 .sfondo{
