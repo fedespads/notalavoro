@@ -7,6 +7,8 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url(Gradient-swirl-in-red-and-blue-iPhone-wallpaper.png) no-repeat center;
+  background-size: cover;
 }
 
 .container{
@@ -37,11 +39,6 @@ body{
   background-color: rgb(90, 90, 90);
   translate: 20px;
 }
-.due{
-  display: flex;
-  background-color: rgb(90, 90, 90);
-  translate: 20px;
-}
 
 .pulsanti{
   display: grid;
@@ -62,11 +59,6 @@ img{
   animation: gonfia 0.2s ease-out;
 }
 
-.sfondo{
-  position: absolute;
-  z-index: -5;
-  width: 100vw;
-}
 
 @keyframes gonfia {
   0%{
